@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    body{
+        background-color: green;
+    }
+    .container {
+	margin-top: 50px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.reveal {
+	position: relative;
+}
+
+.reveal i {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+.btn-danger {
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Log in</h2>
+				<form id="login-form" method="post" action="#">
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<div class="input-group">
+							<input type="password" class="form-control" id="password" name="password" required>
+							<span class="input-group-btn">
+								<button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+							</span>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Log in</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h2>Sign up</h2>
+				<p>fogetpassword</p>
+				<button class="btn btn-default">Sign up</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Or log in with:</p>
+				<button class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</button>
+				<button class="btn btn-danger"><i class="fa fa-google"></i> Google</button>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
